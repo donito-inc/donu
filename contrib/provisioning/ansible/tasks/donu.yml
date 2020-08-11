@@ -1,0 +1,22 @@
+- name: Change to Source Code Folder and run autogen.sh
+  shell: ./autogen.sh
+  args:
+    chdir: /home/node
+
+- name: Run configure.ac
+  shell: ./configure --with-incompatible-bdb --with-unsupported-ssl
+  args:
+    chdir: /home/node
+
+- name: Run Make
+  make:
+    chdir: /home/node
+
+- name: Install to bin dir
+  make:
+    chdir: /home/node
+    target: install
+    params:
+      NUM_THREADS: 4
+  become: yes
+

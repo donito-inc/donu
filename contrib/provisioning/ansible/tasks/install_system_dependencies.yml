@@ -1,0 +1,22 @@
+- name: Update repositories cache
+  apt:
+    update_cache: yes
+    cache_valid_time: 3600
+
+- name: Install system dependencies
+  apt:
+    pkg:
+    - build-essential
+    - libtool
+    - autotools-dev
+    - automake
+    - pkg-config
+    - libssl-dev
+    - libboost-all-dev
+    - libevent-dev
+    - bsdmainutils
+    - libdb5.3-dev
+    - libdb5.3++-dev
+    - libcurl4-openssl-dev
+    - bsdmainutils
+    - python3

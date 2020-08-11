@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Donu
+Comment=Desktop allet for Donu Cryptocurrency
+Comment[de]=Offizieller Client für die Kryptowährung Donu
+Exec=donu-qt %u
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/donu128.png
+MimeType=x-scheme-handler/donu;
+Categories=Office;Finance;
+StartupWMClass=Donu-qt

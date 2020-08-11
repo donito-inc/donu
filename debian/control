@@ -1,0 +1,63 @@
+Source: donu
+Section: utils
+Priority: optional
+Maintainer: Ahmed Bodiwala <admin@multicoin.co>
+Uploaders: Ahmed Bodiwala <admin@multicoin.co>
+Build-Depends: debhelper,
+ devscripts,
+ automake,
+ libtool,
+ bash-completion,
+ libdb++-dev,
+ libssl-dev,
+ pkg-config,
+ libevent-dev,
+ libboost-system-dev (>> 1.47),
+ libboost-filesystem-dev (>> 1.47),
+ libboost-program-options-dev (>> 1.47),
+ libboost-thread-dev (>> 1.47),
+ libboost-test-dev (>> 1.47),
+ libboost-chrono-dev (>> 1.47),
+ libminiupnpc-dev,
+ qttools5-dev-tools, qttools5-dev,
+ libqrencode-dev,
+ libprotobuf-dev, protobuf-compiler,
+ python,
+ libzmq3-dev,
+ dh-systemd
+Standards-Version: 3.9.2
+Homepage: https://www.donu.io/
+Vcs-Git: git://github.com/donit-inc/donu.git
+Vcs-Browser: https://github.com/donito-inc/donu
+
+Package: donud
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ Donu is a crypto-currency project forked from Bitcoin with aim to achieve
+ energy-efficiency and keep as much as possible the original Bitcoin's
+ preferable properties.
+ .
+ This package provides the daemon, donud, and the CLI tool
+ donu-cli to interact with the daemon.
+
+Package: donu-qt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ Donu is a crypto-currency project forked from Bitcoin with aim to achieve
+ energy-efficiency and keep as much as possible the original Bitcoin's
+ preferable properties.
+ .
+ This package provides Donu-Qt, a GUI client for Donu based on Qt.
+
+Package: donu-tx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer digital currency - standalone transaction tool
+ Donu is a crypto-currency project forked from Bitcoin with aim to achieve
+ energy-efficiency and keep as much as possible the original Bitcoin's
+ preferable properties.
+ This package provides donu-tx, a command-line transaction creation
+ tool which can be used without a donu daemon.  Some means of
+ exchanging minimal transaction data with peers is still required.

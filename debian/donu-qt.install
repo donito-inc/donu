@@ -1,0 +1,6 @@
+usr/local/bin/donu-qt usr/bin
+share/pixmaps/donu32.png usr/share/pixmaps
+share/pixmaps/donu128.png usr/share/pixmaps
+share/pixmaps/donu256.png usr/share/pixmaps
+debian/donu-qt.desktop usr/share/applications
+debian/donu-qt.protocol usr/share/kde4/services/

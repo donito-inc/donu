@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=Donu
+Comment=Connect to the Donu P2P Network
+Comment[de]=Verbinde mit dem Donu peer-to-peer Netzwerk
+Comment[fr]=Donu, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Donu, eşten eşe kriptografik sanal para birimi
+Exec=donu-qt %u
+Terminal=false
+Type=Application
+Icon=donu128
+MimeType=x-scheme-handler/donu;
+Categories=Office;Finance;P2P;Network;Qt;
+StartupWMClass=Donu-qt
